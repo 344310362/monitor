@@ -1,0 +1,44 @@
+#!/bin/sh
+# chkconfig:345 85 15
+# description:watch service
+# processname: watchpy
+
+lock="webhealth.py"
+start(){
+        echo “service start....”
+        su root -c "python /home/monitor/webhealth.py -a www.guobensd.com -p 80 &"
+}
+# 停止服务方法
+stop(){
+        echo "services stop ..."
+        pkill -f $lock
+}
+status(){
+        if [ -e $lock ];then
+                echo "$0 service start"
+        else
+                echo "$0 service stop"
+        fi
+}
+#重新启动
+restart(){
+        stop
+        start
+}
+case "$1" in
+"start")
+        start
+        ;;
+"stop")
+        stop
+        ;;
+"status")
+        status
+        ;;
+"restart")
+        restart
+        ;;
+*)
+        echo "$0 start|stop|status|restart"
+        ;;
+esac
