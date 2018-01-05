@@ -7,7 +7,7 @@
 参考：
 [钉钉开放平台文档](https://open-doc.dingtalk.com/docs/doc.htm?spm=a219a.7629140.0.0.karFPe&treeId=257&articleId=105735&docType=1)
 
-![image](image/robot1.png)
+![image](image/robot2.png)
 
 python
 --------
