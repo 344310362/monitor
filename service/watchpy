@@ -6,7 +6,7 @@
 lock="webhealth.py"
 start(){
         echo “service start....”
-        su root -c "python /home/monitor/webhealth.py -a www.guobensd.com -p 80 &"
+        su root -c "python /home/monitor/webhealth.py -a www.baidu.com -p 80 &"
 }
 # 停止服务方法
 stop(){
