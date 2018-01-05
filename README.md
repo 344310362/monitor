@@ -52,3 +52,5 @@ tail -f monitorpy.log
 
 ----
 核心脚本是 webhealth.py 可以自行改造以满足自己的需求
+交流添加微信：
+![image](image/wx.jpg)
