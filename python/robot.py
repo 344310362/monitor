@@ -92,8 +92,9 @@ class FeedLink(object):
 
 
 # 测试
-webhook = "https://oapi.dingtalk.com/robot/send?access_token=5ea8ca127a25dd6d742c871a28699b29b4def6c9c19ca43c7a45c5b864a9da3d"
+#webhook = "https://oapi.dingtalk.com/robot/send?access_token=5ea8ca127a25dd6d742c871a28699b29b4def6c9c19ca43c7a45c5b864a9da3d"
 #webhook = "https://oapi.dingtalk.com/robot/send?access_token=9759a686ebd54562f15ed7d0f19de188e5d91f8b1a00a92812afad75f3a8c41d"
+webhook = "https://oapi.dingtalk.com/robot/send?access_token=9759a686ebd54562f15ed7d0f19de188e5d91f8b1a00a92812afad75f3a8c41d"
 if __name__ == "__main__":
     robot = DtalkRobot(webhook)
     print robot.sendText("现在时间：[" + time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())) + "]", False, ["18850341087","15705924625"])
