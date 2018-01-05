@@ -48,7 +48,7 @@ service watchpy start
 ```
 * 日志查看
 ```
-tail -f monitorpy.log
+tail -f monitorpy.log  //对应到该日志文件的位置
 ```
 
 
